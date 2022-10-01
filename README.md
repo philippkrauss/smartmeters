@@ -8,7 +8,10 @@ Aktuell lese ich einen Wärmemengenzähler für Fernwärme vom Type Landis Gyr T
 Für den Wärmemengenzähler habe ich ein optisches Lesegerät mit USB-Anschluss bei Ebay gekauft. 
 Name des Angebots war "USB IR Lesekopf EHZ Lese-Schreib-Kopf Volkszähler Hichi Smartmeter".
 
-Den Code zum auslesen des Zählers habe ich im Internet gefunden: http://www.sedelmaier.at/node/112
+Den Code zum auslesen des Zählers habe ich im Internet gefunden: 
+
+http://www.sedelmaier.at/node/112
+
 Der Code hat für mich wunderbar funktioniert, ganz ohne Anpassungen.
 Der Output ist etwas umfangreicher als nötig - das Ergebnis muss später noch geparsed werden.
 
@@ -24,7 +27,8 @@ Das Auslesen eines Ferraris-Stromzählers erfordert etwas Bastelarbeit mit dem L
 Das Konzept ist einfach: eine Infrarot-LED leuchtet das Rad des Zählers an, ein Infrarotempfänger misst das reflektierte Licht.
 Wenn die rote Stelle vorne ist, dann zeigt der Empfänger eine Veränderung im Signal.
 
-Der Schaltplan sieht ungefähr so aus:
+Der Schaltplan sieht ungefähr so aus (ich habe das Bild im Internet gefunden - ich weiß nicht mehr, welche Widerstände ich verbaut habe...):
+
 ![Schaltplan](strom/circuit.jpeg)
 
 Da der IR-Widerstand ein Analogsignal abgibt messe ich es mit einem Arduino nano.
