@@ -43,3 +43,9 @@ Deshalb steckt dazwischen noch ein level-shifter.
 Mittels einem python-script wird ein Interrupt auf die steigende Flanke am input-Pin gelegt.
 Der Interrupt-Handler erhöht dann einen Zähler und schreibt den in eine Datei.
 Diese Datei wird, wie schon beim Wärmemengenzähler, über crontab regelmäßig ausgelesen und in eine csv-Datei geschrieben.
+
+## InfluxDB
+
+Ich experimentiere gerade damit, die Messwerte in eine InfluxDB zu schreiben. 
+Ich habe entsprechende python-scripte zu den Verzeichnissen hinzugefügt.
+InfluxDB kann z.B. als Cloud-SaaS-Angebot über AWS gebucht werden.
